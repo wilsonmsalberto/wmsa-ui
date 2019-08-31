@@ -1,0 +1,14 @@
+{
+  "packages": ["packages/*"],
+  "version": "independent",
+  "useWorkspaces": true,
+  "npmClient": "yarn",
+  "command": {
+    "publish": {
+      "access": "public",
+      "allowBranch": ["master"],
+      "conventionalCommits": true,
+      "npmClient": "yarn"
+    }
+  }
+}

@@ -1,21 +1,29 @@
 {
   "name": "wmsa-ui",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "workspaces": ["packages/*"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lerna exec --parallel 'BABEL_ENV=build babel src --out-dir dist --source-maps --extensions .js,.jsx --config-file ../../babel.config.js --delete-dir-on-start --no-comments'",
+    "build-storybook": "build-storybook",
+    "clean": "lerna clean && rm -rf node_modules",
+    "commit": "git-cz",
+    "postinstall": "lerna bootstrap",
+    "prerelease": "yarn build",
+    "release": "LERNA_ENV=publish lerna publish --registry http://localhost:4873",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wilsonmsalberto/wmsa-ui.git"
   },
-  "author": "",
+  "author": "Wilson Alberto (wilsonalberto@gmail.com)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wilsonmsalberto/wmsa-ui/issues"
+  "bugs": {"url": "https://github.com/wilsonmsalberto/wmsa-ui/issues"},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   },
   "homepage": "https://github.com/wilsonmsalberto/wmsa-ui#readme",
   "devDependencies": {
@@ -23,12 +31,17 @@
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "@storybook/addon-actions": "^5.1.11",
     "@storybook/addon-knobs": "^5.1.11",
     "@storybook/addon-links": "^5.1.11",
     "@storybook/addons": "^5.1.11",
     "@storybook/react": "^5.1.11",
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "commitizen": "^4.0.3",
+    "cz-lerna-changelog": "^2.0.2",
+    "lerna": "^3.16.4"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
