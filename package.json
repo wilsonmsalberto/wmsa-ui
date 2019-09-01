@@ -20,11 +20,7 @@
   "author": "Wilson Alberto (wilsonalberto@gmail.com)",
   "license": "ISC",
   "bugs": {"url": "https://github.com/wilsonmsalberto/wmsa-ui/issues"},
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
-    }
-  },
+  "config": {"commitizen": {"path": "./node_modules/cz-lerna-changelog"}},
   "homepage": "https://github.com/wilsonmsalberto/wmsa-ui#readme",
   "devDependencies": {
     "@babel/cli": "^7.5.5",

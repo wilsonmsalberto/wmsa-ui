@@ -1,0 +1,21 @@
+{
+  "name": "@wmsa-ui/noir",
+  "version": "0.0.1",
+  "description": "WMSA Themes",
+  "license": "MIT",
+  "main": "/dist/index.js",
+  "peerDependencies": {
+    "@wmsa-ui/core": "1.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.16",
+    "@emotion/styled": "^10.0.15"
+  },
+  "devDependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.14",
+    "@emotion/is-prop-valid": "^0.8.2",
+    "babel-plugin-emotion": "^10.0.16"
+  }
+}
