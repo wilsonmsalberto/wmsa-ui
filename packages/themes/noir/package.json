@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "/dist/index.js",
   "peerDependencies": {
-    "@wmsa-ui/core": "1.2.0",
+    "@wmsa-ui/core": "^0.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0"
   },

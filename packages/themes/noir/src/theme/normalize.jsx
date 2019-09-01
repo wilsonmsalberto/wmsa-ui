@@ -1,4 +1,4 @@
-export const normalize = `
+const normalize = `
   /* Remove the margin in all browsers */
   body {
     padding: 40px;
@@ -26,3 +26,5 @@ export const normalize = `
     box-sizing: inherit;
   }
 `;
+
+export default normalize;

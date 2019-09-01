@@ -1,8 +1,8 @@
 /** @jsx jsx */
+import React from 'react';
 import { css, Global, jsx } from "@emotion/core";
 import {select} from '@storybook/addon-knobs';
 import {storiesOf} from '@storybook/react';
-import * as React from 'react';
 
 import Button from '../index';
 
@@ -13,7 +13,7 @@ import {
 } from '../../../theme';
 
 // Props
-const htmlTypes = [
+const types = [
   'button',
   'submit',
   'reset',
@@ -34,27 +34,27 @@ storiesOf('Themes/Noir/Components/Button', module)
 
       <Button
         id="test"
-        htmlType={select('Type', htmlTypes)}
+        type={select('Type', types)}
       >
         Default Button
       </Button>
       <Button
         id="test"
-        htmlType={select('Type', htmlTypes)}
+        type={select('Type', types)}
         secondary
       >
         Secondary Button
       </Button>
       <Button
         id="test"
-        htmlType={select('Type', htmlTypes)}
+        type={select('Type', types)}
         transparent
       >
         Transparent Button
       </Button>
       <Button
         id="test"
-        htmlType={select('Type', htmlTypes)}
+        type={select('Type', types)}
         rounded
       >
         Rounded Button

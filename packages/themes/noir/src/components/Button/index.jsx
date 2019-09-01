@@ -4,7 +4,7 @@ import isPropValid from '@emotion/is-prop-valid'
 
 import { CoreButton } from '@wmsa-ui/core';
 
-import { colors, gradients } from '../../theme';
+import { colors } from '../../theme';
 
 /**
  * Allows the usage of `default` instead of `default={true}`
@@ -46,7 +46,7 @@ const variantRadius = props => {
   `;
 };
 
-export const Button = styled(CoreButton, {
+const Button = styled(CoreButton, {
   shouldForwardProp: prop => isPropValid(prop) && !variantProps.includes(prop),
 })`
   padding: 12px;

@@ -1,6 +1,6 @@
+import React from 'react';
 import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
-import * as React from 'react';
 
 import Button from '../index';
 

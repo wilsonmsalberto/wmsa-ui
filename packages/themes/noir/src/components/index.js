@@ -1,6 +1,6 @@
 // Component imports
 import { Button } from './Button';
 
-export default Components = {
+export default {
   Button,
 };

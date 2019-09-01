@@ -1,7 +1,7 @@
-import { Components } from './components';
-import { Theme } from './theme';
+import Components from './components';
+import Theme from './theme';
 
-export default Neo = {
+export default {
   Components,
   Theme,
 }

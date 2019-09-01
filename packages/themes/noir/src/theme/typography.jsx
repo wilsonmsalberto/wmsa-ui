@@ -1,4 +1,4 @@
-import { colors } from './colors';
+import colors from './colors';
 
 const fontProps = ({
   color,
@@ -19,7 +19,7 @@ const fontProps = ({
   `;
 };
 
-export const typography = `
+const typography = `
   body {
     font-weight: normal;
     font-family: sans-serif;
@@ -133,3 +133,5 @@ export const typography = `
     color: colors['gray-blue'],
   }
 `;
+
+export default typography;

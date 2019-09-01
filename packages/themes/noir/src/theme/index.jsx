@@ -1,15 +1,6 @@
-import { colors } from './colors';
-import { globals } from './globals';
-import { mediaQueries } from './media-queries';
-import { normalize } from './normalize';
-import { spacing } from './spacing';
-import { typography } from './typography';
-
-export {
-  colors,
-  globals,
-  mediaQueries,
-  normalize,
-  spacing,
-  typography,
-};
+export { default as colors } from './colors';
+export { default as globals } from './globals';
+export { default as mediaQueries } from './mediaQueries';
+export { default as normalize } from './normalize';
+export { default as spacing } from './spacing';
+export { default as typography } from './typography';
