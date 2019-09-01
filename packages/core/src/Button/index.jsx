@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 
 const Button = ({
   children,
+  onClick,
   type,
   ...attributes
 }) => {
   const handleOnClick = (e) => {
-    const { onClick } = this.props;
-
     e.preventDefault();
 
     if (!onClick) return;
