@@ -4,4 +4,4 @@ import Theme from './theme';
 export default {
   Components,
   Theme,
-}
+};

@@ -7,8 +7,7 @@ const fontProps = ({
   lineHeight,
   fontWeight,
   textAlign,
-}) => {
-  return `
+}) => `
     margin: 0;
     ${color && `color: ${color};`}
     ${fontSize && `font-size: ${fontSize};`}
@@ -17,7 +16,6 @@ const fontProps = ({
     ${fontWeight && `font-weight: ${fontWeight};`}
     ${textAlign && `text-align: ${textAlign};`}
   `;
-};
 
 const typography = `
   body {
@@ -31,102 +29,102 @@ const typography = `
 
   h1 {
     ${fontProps(
-      {
-        color: colors['lavender-gray'],
-        fontSize: '24px',
-        letterSpacing: '-.27px',
-        fontWeight: 'bold',
-        textAlign: 'center',
-      }
-    )}
+    {
+      color: colors['lavender-gray'],
+      fontSize: '24px',
+      letterSpacing: '-.27px',
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
+  )}
   }
 
   h2 {
     ${fontProps(
-      {
-        color: colors['lavender-gray'],
-        fontSize: '21px',
-        letterSpacing: '-.3px',
-        fontWeight: 'bold',
-      }
-    )}
+    {
+      color: colors['lavender-gray'],
+      fontSize: '21px',
+      letterSpacing: '-.3px',
+      fontWeight: 'bold',
+    },
+  )}
 
     & .center {
       ${fontProps(
-        {
-          fontSize: '22px',
-          letterSpacing: '-.31px',
-          lineHeight: '28px',
-          textAlign: 'center',
-        }
-      )}
+    {
+      fontSize: '22px',
+      letterSpacing: '-.31px',
+      lineHeight: '28px',
+      textAlign: 'center',
+    },
+  )}
     }
   }
 
   h3 {
     ${fontProps(
-      {
-        color: colors['lavender-gray'],
-        fontSize: '18px',
-        letterSpacing: '-.21px',
-        fontWeight: 'bold',
-      }
-    )}
+    {
+      color: colors['lavender-gray'],
+      fontSize: '18px',
+      letterSpacing: '-.21px',
+      fontWeight: 'bold',
+    },
+  )}
   }
 
   h4 {
     ${fontProps(
-      {
-        color: colors['lavender-gray'],
-        fontSize: '18px',
-        fontWeight: '600',
-      }
-    )}
+    {
+      color: colors['lavender-gray'],
+      fontSize: '18px',
+      fontWeight: '600',
+    },
+  )}
   }
 
   h5 {
     ${fontProps(
-      {
-        color: colors['lavender-gray'],
-        fontSize: '16px',
-        letterSpacing: '-.18px',
-        fontWeight: '600',
-      }
-    )}
+    {
+      color: colors['lavender-gray'],
+      fontSize: '16px',
+      letterSpacing: '-.18px',
+      fontWeight: '600',
+    },
+  )}
   }
 
   h6 {
     ${fontProps(
-      {
-        color: colors['lavender-gray'],
-        fontSize: '14px',
-        letterSpacing: '-.16px',
-        lineHeight: '1.33',
-        fontWeight: 'bold',
-      }
-    )}
+    {
+      color: colors['lavender-gray'],
+      fontSize: '14px',
+      letterSpacing: '-.16px',
+      lineHeight: '1.33',
+      fontWeight: 'bold',
+    },
+  )}
 
     margin-bottom: 5px;
     text-transform: uppercase;
 
     & .center {
       ${fontProps(
-        {
-          textAlign: 'center',
-        }
-      )}
+    {
+      textAlign: 'center',
+    },
+  )}
     }
   }
 
   p {
     @include font-props($lavender-gray,  18px, null, 24px);
     ${fontProps(
-      {
-        color: colors['lavender-gray'],
-        fontSize: '18px',
-        lineHeight: '24px',
-      }
-    )}
+    {
+      color: colors['lavender-gray'],
+      fontSize: '18px',
+      lineHeight: '24px',
+    },
+  )}
   }
 
   a {

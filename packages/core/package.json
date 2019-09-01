@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "description": "React Functional Components",
   "license": "MIT",
-  "main": "/dist/index.js",
+  "main": "src/index.js",
   "peerDependencies": {
+    "@storybook/addon-knobs": "^5.1.11",
+    "@storybook/react": "^5.1.11",
+    "eslint": "^6.3.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0"
   },

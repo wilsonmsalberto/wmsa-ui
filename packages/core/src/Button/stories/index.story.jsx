@@ -17,28 +17,28 @@ storiesOf('Core/Button', module)
     <>
       <Button
         id="test"
-        type={'button'}
+        type="button"
       >
         Button Type: Button
       </Button>
 
       <Button
         id="test"
-        type={'submit'}
+        type="submit"
       >
         Button Type: Submit
       </Button>
 
       <Button
         id="test"
-        type={'reset'}
+        type="reset"
       >
         Button Type: Reset
       </Button>
 
       <Button
         id="test"
-        type={select('Type', types)}
+        type={ select('Type', types) }
       >
         Button Type: Shifting
       </Button>

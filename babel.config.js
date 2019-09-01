@@ -4,13 +4,13 @@ module.exports = {
     '@babel/preset-react',
   ],
   env: {
-    'build': {
+    build: {
       ignore: [
-        "./**/*.story.{js,jsx}",
-        "./**/*.spec.{js,jsx}",
-        "./**/*.snap",
-      ]
-    }
+        './**/*.story.{js,jsx}',
+        './**/*.spec.{js,jsx}',
+        './**/*.snap',
+      ],
+    },
   },
   ignore: ['node_modules'],
 };

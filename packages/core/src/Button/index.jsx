@@ -13,30 +13,31 @@ const Button = ({
     if (!onClick) return;
 
     onClick();
-  }
+  };
 
   return (
+    /* eslint-disable-next-line react/button-has-type */
     <button
-      {...attributes}
-      onClick={handleOnClick}
-      type={type}
+      { ...attributes } // eslint-disable-line react/jsx-props-no-spreading
+      onClick={ handleOnClick }
+      type={ type }
     >
       {children}
     </button>
   );
-}
+};
 
 Button.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.string,
   ]).isRequired,
+  onClick: PropTypes.func,
   type: PropTypes.oneOf([
     'button',
     'submit',
     'reset',
   ]),
-  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {

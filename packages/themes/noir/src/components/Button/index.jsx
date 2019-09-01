@@ -1,6 +1,6 @@
-import { css } from "@emotion/core";
-import styled from "@emotion/styled";
-import isPropValid from '@emotion/is-prop-valid'
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
+import isPropValid from '@emotion/is-prop-valid';
 
 import { CoreButton } from '@wmsa-ui/core';
 
@@ -15,7 +15,7 @@ const variantProps = [
   'transparent',
 ];
 
-const variantColors = props => {
+const variantColors = (props) => {
   if (props.secondary) {
     return css`
       background: ${colors['gray-blue']};
@@ -34,7 +34,7 @@ const variantColors = props => {
   `;
 };
 
-const variantRadius = props => {
+const variantRadius = (props) => {
   if (props.rounded) {
     return css`
       border-radius: 2px;
@@ -47,10 +47,10 @@ const variantRadius = props => {
 };
 
 const Button = styled(CoreButton, {
-  shouldForwardProp: prop => isPropValid(prop) && !variantProps.includes(prop),
+  shouldForwardProp: (prop) => isPropValid(prop) && !variantProps.includes(prop),
 })`
   padding: 12px;
-  color: ${colors['gunmetal']};
+  color: ${colors.gunmetal};
   font-weight: bold;
   font-size: 14px;
   line-height: 1.2;
