@@ -1,5 +1,3 @@
-import colors from './colors';
-
 const fontProps = ({
   color,
   fontSize,
@@ -17,7 +15,7 @@ const fontProps = ({
     ${textAlign && `text-align: ${textAlign};`}
   `;
 
-const typography = `
+const typography = (colors) => `
   body {
     font-weight: normal;
     font-family: sans-serif;
@@ -30,7 +28,7 @@ const typography = `
   h1 {
     ${fontProps(
     {
-      color: colors['lavender-gray'],
+      color: colors.textColor,
       fontSize: '24px',
       letterSpacing: '-.27px',
       fontWeight: 'bold',
@@ -42,7 +40,7 @@ const typography = `
   h2 {
     ${fontProps(
     {
-      color: colors['lavender-gray'],
+      color: colors.textColor,
       fontSize: '21px',
       letterSpacing: '-.3px',
       fontWeight: 'bold',
@@ -64,7 +62,7 @@ const typography = `
   h3 {
     ${fontProps(
     {
-      color: colors['lavender-gray'],
+      color: colors.textColor,
       fontSize: '18px',
       letterSpacing: '-.21px',
       fontWeight: 'bold',
@@ -75,7 +73,7 @@ const typography = `
   h4 {
     ${fontProps(
     {
-      color: colors['lavender-gray'],
+      color: colors.textColor,
       fontSize: '18px',
       fontWeight: '600',
     },
@@ -85,7 +83,7 @@ const typography = `
   h5 {
     ${fontProps(
     {
-      color: colors['lavender-gray'],
+      color: colors.textColor,
       fontSize: '16px',
       letterSpacing: '-.18px',
       fontWeight: '600',
@@ -96,7 +94,7 @@ const typography = `
   h6 {
     ${fontProps(
     {
-      color: colors['lavender-gray'],
+      color: colors.textColor,
       fontSize: '14px',
       letterSpacing: '-.16px',
       lineHeight: '1.33',
@@ -117,10 +115,9 @@ const typography = `
   }
 
   p {
-    @include font-props($lavender-gray,  18px, null, 24px);
     ${fontProps(
     {
-      color: colors['lavender-gray'],
+      color: colors.textColor,
       fontSize: '18px',
       lineHeight: '24px',
     },
@@ -128,7 +125,7 @@ const typography = `
   }
 
   a {
-    color: colors['gray-blue'],
+    color: ${colors.secondary},
   }
 `;
 
