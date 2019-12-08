@@ -13,13 +13,13 @@
     "react": "16.9.0"
   },
   "dependencies": {
-    "@emotion/core": "10.0.16",
-    "@emotion/is-prop-valid": "0.8.2",
-    "@emotion/styled": "10.0.15",
-    "emotion-theming": "10.0.17"
+    "@emotion/core": "^10.0.22",
+    "@emotion/is-prop-valid": "^0.8.5",
+    "@emotion/styled": "^10.0.23",
+    "emotion-theming": "^10.0.19"
   },
   "devDependencies": {
-    "@emotion/babel-preset-css-prop": "10.0.14",
-    "babel-plugin-emotion": "10.0.16"
+    "@emotion/babel-preset-css-prop": "^10.0.23",
+    "babel-plugin-emotion": "^10.0.23"
   }
 }
