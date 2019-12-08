@@ -5,19 +5,19 @@
   "license": "MIT",
   "main": "src/index.js",
   "peerDependencies": {
-    "@storybook/addon-knobs": "^5.1.11",
-    "@storybook/react": "^5.1.11",
-    "eslint": "^6.3.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0"
+    "@storybook/addon-knobs": "5.1.11",
+    "@storybook/react": "5.1.11",
+    "eslint": "6.3.0",
+    "prop-types": "15.7.2",
+    "react": "16.9.0"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.16",
-    "@emotion/styled": "^10.0.15"
+    "@emotion/core": "10.0.16",
+    "@emotion/styled": "10.0.15"
   },
   "devDependencies": {
-    "@emotion/babel-preset-css-prop": "^10.0.14",
-    "@emotion/is-prop-valid": "^0.8.2",
-    "babel-plugin-emotion": "^10.0.16"
+    "@emotion/babel-preset-css-prop": "10.0.14",
+    "@emotion/is-prop-valid": "0.8.2",
+    "babel-plugin-emotion": "10.0.16"
   }
 }
